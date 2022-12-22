@@ -25,14 +25,16 @@ class App extends Component {
   //   })
   // }
 
-
- 
+  //метод () получения данных с формы
+  formSubmitHendler = (Date) => { // получаем данные в не вормы
+  console.log(Date)
+}
 
 	render() {
  
 		return (
       <>
-  <Form />
+  <Form propOnSubmit={this.formSubmitHendler} />
       
     </>
 		)
